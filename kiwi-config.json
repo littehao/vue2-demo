@@ -1,0 +1,25 @@
+{
+  "fileType": "js",
+  "srcLang": "zh-CN",
+  "distLangs": [
+    "en-US",
+    "zh-TW"
+  ],
+  "googleApiKey": "",
+  "baiduApiKey": {
+    "appId": "20240218001966390",
+    "appKey": "hL_3akvLughPTWdF4EfX"
+  },
+  "baiduLangMap": {
+    "en-US": "en",
+    "zh-TW": "cht"
+  },
+  "translateOptions": {
+    "concurrentLimit": 10,
+    "requestOptions": {}
+  },
+  "defaultTranslateKeyApi": "Pinyin",
+  "importI18N": "import I18N from '@/utils/I18N';",
+  "ignoreDir": [],
+  "ignoreFile": []
+}

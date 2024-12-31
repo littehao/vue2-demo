@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2>指纹获取</h2>
+    <h2>{{ I18N.common.zhiWenHuoQu }}</h2>
     <div>
-      <button @click="hasTouchId">获取</button>
+      <button @click="hasTouchId">{{ I18N.common.huoQu }}</button>
       <div>touchId:{{ touchId }}</div>
       <div>clientDataJSON:{{ clientDataJSON }}</div>
       <img
@@ -13,7 +13,9 @@
   </div>
 </template>
 <script>
-import { touchIDRegistered } from "@/uilts/TouchIDLogin";
+import I18N from "@/utils/I18N";
+
+import { touchIDRegistered } from "@/utils/TouchIDLogin";
 export default {
   name: "fingerPrint",
   data() {
@@ -31,7 +33,7 @@ export default {
       console.log(hasTouchID);
       if (hasTouchID) {
         const data = await touchIDRegistered(
-          "胡浩",
+          I18N.common.huHao,
           window.btoa(1),
           window.btoa("abc")
         );

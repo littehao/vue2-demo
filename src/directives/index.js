@@ -1,7 +1,9 @@
-import copy from "./vcopy";
+import { copy, longpress, debounce } from "./directives";
 
 const directives = {
   copy,
+  longpress,
+  debounce,
 };
 
 export default {
